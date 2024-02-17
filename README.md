@@ -3,7 +3,7 @@
 //Registration
 Method: POST
 URL: http://localhost:3737/auth/register
-Body: JSON
+Body: raw (JSON)
 {
   "username": "roshi",
   "password": "roshi37"
@@ -18,7 +18,7 @@ Response:
 //Login
 Method: POST
 URL: http://localhost:3737/auth/login
-Body: JSON
+Body: raw (JSON)
 {
   "username": "roshi",
   "password": "roshi37"
@@ -27,8 +27,8 @@ Response:
 {
     "token": "417ghv"
 }
-*If wrong username or password*
-body: JSON
+*If wrong username or password is written then :*
+Body: raw (JSON)
 {
   "username": "roshi",
   "password": "roshi7"
@@ -43,7 +43,7 @@ Response:
 //Creating a Blog
 Method: POST
 URL: http://localhost:3737/blogs
-Body: JSON
+Body: raw (JSON)
 {
   "title": "API",
   "content": "This is a new blog post about API!",
@@ -58,7 +58,7 @@ Response:
 }
 
 *Creating another blog with authorid 2*
-Body: JSON
+Body: raw (JSON)
 {
   "title": "NodeJS",
   "content": "This is a new blog post about NodeJS!",
